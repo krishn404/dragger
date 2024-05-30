@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ojuju:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Rammetto+One&family=Shojumaru&family=Teko&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFFFFF;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.subtitle-text{
+    font-weight: 800;
+    color: #ffffff;
+}.slick-arrow{
+    color: green;
+}
+.text-center {
+    text-align: center;
+}    
+.title .main-text {
+    font-size: 2em;
+    font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 8vh;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-wrapper {
+    position: relative;
+    width: 212px;
+    height: 217px;
+    background-color: #ebebeb;
+    overflow: visible;
+    transition: background-color 0.3s ease;
+    border-radius: 11px;
+    margin: 15px;
+    box-shadow: 0 px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+
+
+.testimonial-wrapper:hover {
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
+.testimonial-wrapper:hover svg{
+    fill: white;
+}
+
+.testimonial-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slick-dots li button:before {
+    color: rgb(255, 115, 0);
+    opacity: 100;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+}
+.slick-dots li.slick-active button {
+    position: relative;
+}
+.slick-dots li.slick-active button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid rgb(255, 115, 0);
+    border-radius: 50%;
+    background: transparent;
+    z-index: 1;
+}
+.slick-dots li.slick-active button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px; 
+    height: 6px; 
+    background-color: rgb(255, 115, 0); 
+    border-radius: 50%;
+    z-index: 2;
+}
+@media (max-width: 767px) {
+    .testimonial-content {
+    box-shadow: 0 0 0 0;
+    }
+    .container{
+        width: 500px;
+    }
+}
+@media (max-width:509px) {
+    .container{
+        width: 400px;
+    }
+    .title .main-text{
+font-size: 1rem;
+    }
+    
+}
